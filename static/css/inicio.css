@@ -1,0 +1,13 @@
+body {
+    background: url(../img/gray.jpg)no-repeat fixed center center #333;
+    background-size: cover;
+    
+ }
+ p, #aviso{
+     color:white;
+     font-family: georgia;
+     
+ }
+ .parrafo{
+     padding: 25%;
+ }

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="static/css/inicio.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/css/for.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pagos de servicios básicos</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="static/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="static/css/pago.css">
+</head>
+
+<body>
+  <td width="5%">
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a class="nav-link active" id="trans">Transferencia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="servicios">Pago de servicios</a>
+      </li>
+
+
+    </ul>
+  </td>
+  <br>
+  <div id="carru">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/img/transfer.png" height="200" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Realiza tus transacciones.</h5>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/img/cheque.png" height="200"  class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Realiza tus pagos.</h5>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/img/depo.png" height="200" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Realiza tus depositos.</h5>
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  
+   <form class="forma" name="radios" id="cuadrado">
+      <div class="consulta">
+          <label id="cuenta">Cuentas Bancarias</label>
+          <label id="saldo"> SALDO</label>
+          <br>
+          <input type="radio" id="a" name="banco">
+          <img src="static/img/pichincha.jpg" height="35px" width="100px">
+    
+          <label class="monto">MONTO</label>
+          <input type="text" id="monto1" disabled>
+    
+          <br>
+          <input type="radio" id="b" name="banco">
+          <img src="static/img/banco-guayaquil.png" height="35px" width="100px">
+    
+          <label class="monto">MONTO</label>
+          <input type="text" id="monto2" disabled>
+    
+          <br>
+          <input type="radio" id="c" name="banco">
+          <img src="static/img/Banco-del-Pacífico.png" height="35px" width="100px">
+    
+          <label class="monto">MONTO</label>
+          <input type="text" id="monto3" disabled>
+    
+        </div>
+   </form>
+      
+   
+        
+   
+  
+
+  <div id="pagos">
+    <h1>Pagos de Servicios Básicos</h1>
+  </div>
+  <br><br>
+  <div id="pagos1">
+    <div class="subtotal">
+      <input type="radio" id="pagoLuz" name="pago">
+      <label for="luz" id="luz">Servicio Eléctrico:</label>
+      <input type="text" id="numLuz" placeholder="Código de Suministro" >
+      <br><br>
+      <input type="radio" id="pagoAgua" name="pago">
+      <label for="agua" id="agua">Servicio Potable: </label>
+      &nbsp;&nbsp;
+      <input type="text" id="numAgua" placeholder="Código de Suministro">
+
+      <br>
+      <input type="submit" id="btnGenerar" value="Verificar monto a pagar">
+      <br><br>
+      <label for="total" id="total">Total a Pagar: </label>
+      <br>
+      &nbsp;&nbsp;
+      <input type="text" id="pagarAhora" disabled>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" id="btnAceptar" value="Aceptar">
+      
+      
+    </div>
+  </div>
+  </div>
+
+
+
+  <div id="transa">
+    <br><br>
+    <center>
+      <h1 class="color">Transaccion</h1>
+    </center>
+    <br>
+    <form>
+      
+      <label for="contra">Monto:</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" id="valorTransferir" placeholder="Monto"><br>
+
+      <label for="contra">Cuenta a transferir:</label>
+      <input type="text" id="numeroDeCuenta" placeholder="Cuenta a transferir"><br>
+      <br>
+      <label class="monto">Cuenta 1</label>
+      <input type="text" id="account1" disabled>
+      <br><br>
+    
+
+
+      <p align="right"><input type="button" id="btnRealizar" value="Realizar"></p>
+
+    </form>
+
+  </div>
+
+
+</body>
+
+</html>
+
+
+
+</body>
+<script src="static/js/pagoServicio.js"></script>
+<script src="static/js/transfer.js"></script>
+<script>
+  var divpa = document.getElementById("pagos");
+  divpa.style.display = "none";
+  var divpa1 = document.getElementById("pagos1");
+  divpa1.style.display = "none";
+  var divtra = document.getElementById("transa");
+  divtra.style.display = "none";
+  var divca = document.getElementById("carru");
+  divca.style.display = "block";
+  var divcuadrado = document.getElementById("cuadrado");
+  divcuadrado.style.display = "none";
+  document.getElementById("servicios").addEventListener("click", function () {
+
+    divpa1.style.display = "block";
+    divpa.style.display = "block";
+    divtra.style.display = "none";
+    divca.style.display = "none";
+    divcuadrado.style.display = "block";
+  })
+
+  document.getElementById("trans").addEventListener("click", function () {
+    divpa1.style.display = "none";
+    divpa.style.display = "none";
+    divcuadrado.style.display = "block";
+    divtra.style.display = "block";
+    divca.style.display = "none";
+    //limpiar
+    document.getElementById("pagarAhora").value="00.00";
+    document.getElementById("numLuz").value='';
+    document.getElementById("numAgua").value='';
+
+  })
+  
+
+</script>
+
+</html>

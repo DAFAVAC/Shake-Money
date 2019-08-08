@@ -1,0 +1,88 @@
+h1{
+    text-align: center;
+}
+.espacio{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 15%;
+}
+
+#etiti{
+    padding-left: 2.9%;
+    margin: 3%;
+    font-size: 20px;
+}
+.arreglo{
+    text-align-last: auto;
+    padding: left 20px;;
+    border-style: solid;
+    padding:25px;
+    margin-left: 20%;
+    margin-right: 15%;
+   margin:auto;
+   width: 25%;
+   padding-bottom: 5ex;
+}
+.forma{
+    padding-left: 3ex;
+    padding-top:5px;
+    padding-bottom:10px;
+    background-color: aliceblue;
+    text-align-last: left;
+    margin-right: 1080px;
+    margin-left: 3ex;
+    padding: center;
+    width: 505px;
+}
+.subtotal{
+    text-align-last: auto;
+    
+    border-style: solid;
+    background-color: azure;
+    margin-left: 20%;
+    margin-right: 10%;
+   margin:auto;
+   width: 25%;
+    padding-left: 25px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#Guardar{
+    margin: 10px;
+    padding: top 3px;
+    margin-left: 45%;  
+}
+#saldo{
+    padding-left: 200px;
+    color:black;
+}
+.monto{
+    padding-left: 80px;
+    color:black;
+}
+#cuenta{
+  color:black;
+}
+.consulta{
+    padding-left: 10px;
+    text-align-last: initial;
+   
+}
+#pagos{
+    color: aliceblue;
+}
+#monto1{
+    text-align-last: center;
+}
+#monto2{
+    text-align-last: center;
+}
+#monto3{
+    text-align-last: center;
+}
+#pagarAhora{
+    text-align-last: center;
+   padding-left: 10px;
+   border-width: 1;
+   width: 80px;
+}
